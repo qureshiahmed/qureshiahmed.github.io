@@ -1,0 +1,8 @@
+@inproceedings{qureshi2018deeply,
+  title={Deeply informed neural sampling for robot motion planning},
+  author={Qureshi, Ahmed H and Yip, Michael C},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={6582--6588},
+  year={2018},
+  organization={IEEE}
+}

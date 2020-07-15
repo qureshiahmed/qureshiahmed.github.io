@@ -1,0 +1,8 @@
+@inproceedings{qureshi2017show,
+  title={Show, attend and interact: Perceivable human-robot social interaction through neural attention Q-network},
+  author={Qureshi, Ahmed Hussain and Nakamura, Yutaka and Yoshikawa, Yuichiro and Ishiguro, Hiroshi},
+  booktitle={2017 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={1639--1645},
+  year={2017},
+  organization={IEEE}
+}

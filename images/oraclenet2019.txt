@@ -1,0 +1,10 @@
+@INPROCEEDINGS{bency2019neural,
+  author={M. J. {Bency} and A. H. {Qureshi} and M. C. {Yip}},
+  booktitle={2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Neural Path Planning: Fixed Time, Near-Optimal Path Generation via Oracle Imitation}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={3965-3972}
+  organization={IEEE}
+}

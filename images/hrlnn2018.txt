@@ -1,0 +1,9 @@
+@article{qureshi2018intrinsically,
+  title={Intrinsically motivated reinforcement learning for human--robot interaction in the real-world},
+  author={Qureshi, Ahmed Hussain and Nakamura, Yutaka and Yoshikawa, Yuichiro and Ishiguro, Hiroshi},
+  journal={Neural Networks},
+  volume={107},
+  pages={23--33},
+  year={2018},
+  publisher={Elsevier}
+}
