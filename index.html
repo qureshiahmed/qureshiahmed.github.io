@@ -1,0 +1,589 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0041)https://people.eecs.berkeley.edu/~barron/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #07889b; /*#1772d0;*/
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #e37222; /*#f7b733;*/ /*f09228;*/
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 15px; /*14*/
+    }
+    strong {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 15px; /*14*/
+    }
+    heading {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 22px;
+    color: #e37222; /*#fc4a1a;*/
+    }
+    heading2 {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 18px;
+    }
+    papertitle {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 15px; /*14*/
+    font-weight: 700;
+    }
+    name {
+    font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+    font-size: 42px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://people.eecs.berkeley.edu/~barron/seal_icon.png">
+  <title>Ahmed H. Qureshi, UCSD</title>
+
+  <link href="./_files/css" rel="stylesheet" type="text/css">
+  <style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+/*html {
+  -webkit-filter: brightness(100%) contrast(100%) grayscale(20%) sepia(10%) !important;
+}*/
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+*:-webkit-full-screen, *:-webkit-full-screen * {
+  -webkit-filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(255,255,255) !important;
+}
+
+}</style>
+
+<script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+</script>
+
+</head>
+</div>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+        <name>Ahmed H. Qureshi</name><br>
+        a1quresh at eng dot ucsd dot edu
+        </p>
+        <p> I am a Ph.D. candidate in the ECE department at <a href="https://ucsd.edu/">UC San Diego</a>, advised by Professor <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>. My research revolves around robot learning for planning and control. 
+        </p>          
+        <p>
+        <i>I develop reinforcement learning and planning algorithms inspired from the human cognitive process to enable machines safely interact with their environments, and solve practical navigation and manipulation problems.</i> <!--This includes autonomous reinforcement learning algorithms for acquiring motor skills, approaches for learning models of the world from unsupervised interaction, and meta-learning methods that leverage previous experience to quickly acquire new capabilities.-->
+        <!--I am interested in how algorithms can enable machines to acquire more general notions of intelligence through learning and interaction, allowing them to autonomously learn a variety of complex sensorimotor skills in real-world settings. This includes learning deep representations for representing complex skills from raw sensory inputs, enabling machines to learn through interaction without human supervision, and allowing systems to build upon what they've learned previously to acquire new capabilities with small amounts of experience.-->
+        </p>          
+        <p> Previously, I completed my M.S. in Engineering at <a href="https://www.osaka-u.ac.jp/en">Osaka University</a>, where I worked with Professor <a href="http://www.geminoid.jp/en/index.html">Hiroshi Ishiguro</a>. During my MS, I was fortunate to be supported by the MEXT schorlarship. I did a B.S. in Electrical Engineering from <a href="http://www.nust.edu.pk/">NUST</a>. 
+        </p>
+
+        <p align="center">
+<a href="_files/cv.pdf">CV</a> &nbsp;/&nbsp;
+<a href="https://scholar.google.com/citations?user=Lkrx2SkAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+<a href="https://github.com/ahq1993"> GitHub </a> &nbsp;/&nbsp;
+<a href="https://www.twitter.com/ahqureshi1993/">Twitter</a> 
+        </p>
+        </td>
+        <td width="33%">
+        <img height="320" width="280" src="images/ahmed.JPG">
+        </td>
+      </tr>
+  </tbody></table>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr><td>
+            <heading>News</heading>
+            <ul>
+                <li>I will be joining <a href="https://www.nvidia.com/en-us/research/robotics/">Nvidia</a> as a Robotics Research Intern in Fall 2020.</li>
+                <li>I hosted a discussion session on <a href="https://docs.google.com/presentation/d/1sS4LCAi5MZEPr7AbfmJoeX1XULkUuStW-uasGunE8iE/edit#slide=id.p">Learning-based Motion Planning Alogrithms</a> at <a href="https://www.icra2020.org/">ICRA 2020</a>.</li>
+                <li>In Fall 2019, I co-taught a course on Robot Reinforcement Learning at UC San Diego.</li>
+                <li>I am honored to be selected among top young researchers in computer science by the <a href="https://www.heidelberg-laureate-forum.org/">6th Heidelberg Laureate Forum</a> held in September 2018.</li>
+                <li>In September 2017, I completed my MS!</li>
+            </ul>
+        </td></tr>
+
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <heading>Teaching</heading>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody><tr>
+        <!--<td width="25%"><img src="./_files/teach_crop.jpg" alt="teach" width="160" height="160"></td>-->
+        <td width="75%" valign="center">
+          <p>
+        
+       
+           <a href="https://sites.google.com/site/mikeyip1/teaching/ece285">
+            <papertitle>UCSD ECE 285: Advances in Robot Manipulation</papertitle></a>, 
+             Spring 2020 - Teaching Assistant (TA)<br>
+
+           <a href="https://www.ucsd.edu/catalog/courses/ECE.html#ece276c">                        
+            <papertitle>UCSD ECE 276C: Robot Reinforcement Learning</papertitle></a>, 
+             Fall 2019 - Co-Instructor <br>
+
+            <a href="https://www.edx.org/course/cognitive-neuroscience-robotics-part-a">
+            <papertitle>edX Osaka University: Cognitive Neuroscience Robotics – Part A</papertitle></a>, 
+             Winter/Fall 2016 - Teaching Assistant (TA)<br>
+            
+             <a href="https://drive.google.com/file/d/0B3pJ2Kkk9lUDZm15MGFzV09SWUk/view">           
+             <papertitle>Osaka Univerity: Variational Inference(derivation and examples)</papertitle></a>, 
+             Dec 2016 - Instructor<br>
+           
+            <a href="https://drive.google.com/file/d/0B3pJ2Kkk9lUDV3I1Wjk1ekxyTTQ/view">
+            <papertitle>Osaka Univerity: Deep learning and its applications</papertitle></a>, 
+             Fall 2015 - Instructor<br>
+               
+
+        </p>
+        </td>
+      </tr>
+      </tbody></table>
+              <tr><td>
+            <heading>Invited Talks</heading>
+            <!-- Miing ICML 2019, CVPR 2019-->
+            <ul>
+                <li>I gave a talk on challenges in multi-task learning and meta-learning (<a href="_files/ias_slides.pdf">slides here</a>, <a href="https://video.ias.edu/workshop/2020/0416-ChelseaFinn">video here</a>) at the IAS Workshop on New Directions in Optimization Statistics and Machine Learning.</li>
+                <li>At NeurIPS 2019, I gave an invited talk on Meta-Learning and Memorization (<a href="_files/neurips19_memorization.pdf">slides here</a>, <a href="https://slideslive.com/38921876/bayesian-deep-learning-3">video here</a>) at the Bayesian Deep Learning Workshop</li>
+                <li>At RLDM 2019, I gave an invited talk on Reinforcement Learning for Robots (<a href="_files/rldm2019_rl_for_robots.pdf">slides here</a>).</li>
+                <li>At CVSS 2019, I gave an invited lecture on Deep Visuomotor Learning (<a href="_files/cvss2019.pdf">slides here</a>).</li>
+                <li>At RSS 2019, I gave invited talks in the workshops on Simulation to Real World Transfer (<a href="_files/rss19_sim2real.pdf">slides here</a>), the workshop on Task-Informed Grasping (<a href="_files/rss19_tig.pdf">slides here</a>), and the workshop on Women in Robotics (<a href="_files/rss19_women.pdf">slides here</a>) </li>
+                <li>At ICLR 2019, I gave invited talks at the Task-Agnostic RL Workshop (<a href="_files/tarl_iclr19.pdf">slides here</a>, <a href="https://slideslive.com/38915490/r09-taskagnostic-reinforcement-learning">video here</a>), the workshop on Learning from Limited Labeled Data (<a href="_files/lld_iclr19.pdf">slides here</a>, <a href="https://slideslive.com/38915478/r01-the-2nd-learning-from-limited-labeled-data-lld-workshop-representation-learning-for-weak-supervision-and-beyond">video here</a>).</li>  
+                <li>In May 2019, I gave a talk at the <a href="https://www.grasp.upenn.edu/events/chelsea-finn">GRASP Seminar</a> at University of Pennsylvania (<a href="_files/upenn_may2019.pdf">slides here</a>).</li>
+                <li>At NeurIPS 2018, I gave invited talks at the Continual Learning Workshop (<a href="_files/neurips18_continual_25min.pdf">slides here</a>), the workshop on Learning to Model the Physical World (<a href="_files/neurips18_model_the_world_25min.pdf">slides here</a>), and the workshop on Spatiotemporal Modeling (<a href="_files/neurips18_spatiotemporal_25min.pdf">slides here</a>).</li>
+                <li>In September 2018, I gave a 3-minute talk at EmTech (<a href="https://events.technologyreview.com/video/watch/chelsea-finn-uc-berkeley-innovator">video here</a>) </li>
+                <li>In July 2018, I gave a talk at Google DeepMind with Sergey Levine on meta-learning frontiers. (<a href="_files/metalearning_frontiers_2018_small.pdf">slides here</a>)</li>
+            </ul>
+        </td></tr>
+    
+
+       <td width="100%" valign="middle">
+
+         <heading>Publications</heading> <br><br>
+          <!--My research is at the intersection of machine learning, perception, and control for robotics.  In particular, I'm interested in how learning algorithms can enable robots to autonomously acquire complex sensorimotor skills.-->
+                 <table
+                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                          
+                          <tr>
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/compnet_ral.gif' width="100%" height="31%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1907.06013.pdf" id="compnet_ral">
+                                        <papertitle>Neural Manipulation Planning on Constraint Manifolds</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Jiangeng Dong,
+                                    Austin Choe,
+                                    Michael C. Yip
+                                    <br>
+                                    <em>IEEE Robotics and Automation Letters</em>, 2020 
+                                    <br>
+                                    <a href="https://sites.google.com/view/constrainedmpnet/home">[project page]</a>
+                                    <a href="https://sites.google.com/view/constrainedmpnet/home">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+                          
+
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/mpnet2_jour.gif' width="100%" height="25%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1907.06013.pdf" id="MPNet_journal">
+                                        <papertitle>Motion Planning Networks: Bridging the Gap Between
+                                        Learning-based and Classical Motion Planners</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yinglong Miao,
+                                    Anthony Simeonov,
+                                    Michael C. Yip
+                                    <br>
+                                    <em>IEEE Transaction on Robotics</em>, 2020 
+                                    <br>
+                                    <a href="https://sites.google.com/view/mpnet/home">[project page]</a>
+                                    <a href="https://sites.google.com/view/mpnet/home">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/ant-maze-gif.gif' width="100%" height="25%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1905.10681.pdf" id="crl">
+                                   <papertitle>Composing Task-Agnostic Policies with Deep Reinforcement Learning</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Jacob J Johnson,
+                                    Yuzhe Qin,
+                                    Taylor Henderson,
+                                     Byron Boots,
+                                     Michael C. Yip
+                                    <br>
+                                    <em>International Conference on Representation Learning (ICLR)</em>, 2020 
+                                    <br>
+                                    <a href="https://sites.google.com/view/compositional-rl">[project page]</a>
+                                    <a href="images/crl2020.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+
+                          
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/eairl.gif' width="100%" height="30%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1809.06404.pdf">
+                                    <papertitle>Adversarial Imitation via Variational Inverse Reinforcement Learning</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Byron Boots,
+                                    Michael C. Yip
+                                    <br>
+                                    <em>International Conference on Representation Learning (ICLR)</em>, 2019 
+                                    <br>
+                                    <a href="https://sites.google.com/view/eairl">[project page]</a>
+                                    <a href="images/eairl2019.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+                          
+
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/mpnet_jour.gif' width="100%" height="30%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1806.05767.pdf">
+                                    <papertitle>Motion Planning Networks</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                     Anthony Simeonov,
+                                    Mayur J. Bency,
+                                    Michael C. Yip
+                                    <br>
+                                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2019
+                                    <br>
+                                    <a href="https://sites.google.com/view/mpnet/home">[project page]</a>
+                                    <a href="images/mpnet2019.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+        
+        
+                             <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/onet.gif' width="100%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1904.11102.pdf">
+                                    <papertitle>Neural path planning: Fixed time, near-optimal path generation via oracle imitation</papertitle>
+                                    </a>
+                                    <br>
+                                    Mayur J. Bency,
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Michael C. Yip
+                                    <br>
+                                    <em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2019
+                                    <br>
+                                    <a href="https://github.com/mayurj747/oraclenet-analysis">[project page]</a>
+                                    <a href="images/oraclenet2019.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+                          
+                          
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/deepsmp.png' width="100%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1809.10252.pdf">
+                                    <papertitle>Deeply informed neural sampling for robot motion planning</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Michael C. Yip
+                                    <br>
+                                    <em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2018
+                                    <br>
+                                    <a href="https://sites.google.com/view/mpnet/home">[project page]</a>
+                                    <a href="images/deepsmp2018.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+        
+        
+                              <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/pbrrt.png' width="100%" height="30%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1807.08325.pdf">
+                                    <papertitle>Potentially guided bidirectionalized RRT* for fast optimal path planning in cluttered environments</papertitle>
+                                    </a>
+                                    <br>
+                                    Zahid Tahir,
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yasar Ayaz,
+                                    Raheel Nawaz
+                                    <br>
+                                    <em>Robotics and Autonomous Systems</em>, 2018
+                                    <br>
+                                     <a href="images/pbrrt2018.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+
+        
+        
+        
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/nn_rl.PNG' width="100%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1804.05259.pdf">
+                                    <papertitle>Intrinsically motivated reinforcement learning for human-robot interaction in the real-world</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yutaka Nakamura,
+                                    Yuichiro Yoshikawa, 
+                                    Hiroshi Ishiguro
+                                    <br>
+                                    <em>Neural Networks</em>, 2018
+                                    <br>
+                                     <a href="images/hrlnn2018.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                  </td>
+                            </tr>
+
+   
+       
+
+
+                             <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src='images/icra17.gif' width="100%" height="30%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1702.08626.pdf">
+                                    <papertitle>Show, attend and interact: Perceivable human-robot social interaction through neural attention Q-network</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yutaka Nakamura,
+                                    Yuichiro Yoshikawa, 
+                                    Hiroshi Ishiguro
+                                    <br>
+                                    <em>International Conference on Robotics and Automation (ICRA)</em>, 2017
+                                    <br>
+                                     <a href="images/hrlicra2017.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                  </td>
+                            </tr>
+        
+
+
+
+                             <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="images/humanoid2016.PNG" width="100%" height="20%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1702.07492.pdf">
+                                    <papertitle>Robot gains social intelligence through multimodal deep reinforcement learning</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yutaka Nakamura,
+                                    Yuichiro Yoshikawa, 
+                                    Hiroshi Ishiguro
+                                    <br>
+                                    <em>International Conference on Humanoid Robots (Humanoids)</em>, 2016
+                                    <br>
+                                     <a href="images/hrlhumanoid2016.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>        
+        
+
+    
+
+
+                             <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="images/prrt.PNG" width="100%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1704.00264.pdf">
+                                    <papertitle>Potential functions based sampling heuristic for optimal path planning</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yasar Ayaz
+                                    <br>
+                                    <em>Autonomous Robots</em>, 2016
+                                    <br>
+                                     <a href="images/prrt2016.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>
+                          
+                       
+  
+                             <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="images/ibrrt2.PNG" width="100%"/>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1704.00264.pdf">
+                                    <papertitle>Intelligent bidirectional rapidly-exploring random trees for optimal motion planning in complex cluttered environments</papertitle>
+                                    </a>
+                                    <br>
+                                    <strong>Ahmed Qureshi</strong>,
+                                    Yasar Ayaz
+                                    <br>
+                                    <em>Robotics and Autonomous Systems</em>, 2015
+                                    <br>
+                                     <a href="images/ibrrt2015.txt">[bibtex]</a>
+                                    <br>
+                                    <p></p>
+                                </td>
+                            </tr>      
+        
+        
+        
+        
+        
+                    </table>         
+          </td>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td>
+        <br>
+        <p align="right"><font size="2">
+          <a href="https://people.eecs.berkeley.edu/~barron/">This guy makes a nice webpage.</a>
+          </font>
+        </p>
+        </td>
+      </tr>
+  </tbody></table>
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-59618557-1', 'auto');
+                ga('send', 'pageview');
+
+              </script>
+
+    </td>
+    </tr>
+  </tbody></table>
+
+
+</body></html>
