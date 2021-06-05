@@ -1,0 +1,10 @@
+@article{li2021mpc,
+  title={MPC-MPNet: Model-Predictive Motion Planning Networks for Fast, Near-Optimal Planning under Kinodynamic Constraints},
+  author={Li, Linjun and Miao, Yinglong and Qureshi, Ahmed H and Yip, Michael C},
+  journal={IEEE Robotics and Automation Letters},
+  volume={6},
+  number={3},
+  pages={4496--4503},
+  year={2021},
+  publisher={IEEE}
+}
