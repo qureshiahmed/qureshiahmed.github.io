@@ -1,6 +1,0 @@
-@INPROCEEDINGS{qureshi2021nerp, 
-    AUTHOR    = {Ahmed Qureshi, Arsalan Mousavian, Chris Paxton, Michael Yip, AND Dieter Fox}, 
-    TITLE     = {NeRP: Neural Rearrangement Planning for Unknown Objects}, 
-    BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
-    YEAR      = {2021}
-    }

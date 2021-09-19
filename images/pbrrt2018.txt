@@ -1,9 +1,0 @@
-@article{tahir2018potentially,
-  title={Potentially guided bidirectionalized RRT* for fast optimal path planning in cluttered environments},
-  author={Tahir, Zaid and Qureshi, Ahmed H and Ayaz, Yasar and Nawaz, Raheel},
-  journal={Robotics and Autonomous Systems},
-  volume={108},
-  pages={13--27},
-  year={2018},
-  publisher={Elsevier}
-}

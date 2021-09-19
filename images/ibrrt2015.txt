@@ -1,9 +1,0 @@
-@article{qureshi2015intelligent,
-  title={Intelligent bidirectional rapidly-exploring random trees for optimal motion planning in complex cluttered environments},
-  author={Qureshi, Ahmed Hussain and Ayaz, Yasar},
-  journal={Robotics and Autonomous Systems},
-  volume={68},
-  pages={1--11},
-  year={2015},
-  publisher={Elsevier}
-}
