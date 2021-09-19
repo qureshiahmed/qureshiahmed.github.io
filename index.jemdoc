@@ -1,0 +1,42 @@
+# jemdoc: menu{MENU}{index.html}
+= Anwesan Pal 
+
+~~~
+{}{img_left}{anwesan.jpg}{alt text}{489.8px}{326.4px}{}
+Anwesan Pal \n
+Ph.D. Student \n
+Department of Computer Science and Engineering \n
+Contextual Robotics Institute \n
+University of California San Diego  \n
+Contact: [a2pal@eng.ucsd.edu a2pal@eng.ucsd.edu]
+~~~
+
+== Short Bio 
+I am currently a Ph.D. student in the [https://cse.ucsd.edu/ Department of Computer Science and Engineering] at [https://ucsd.edu/ UC San Diego]. I work in the 
+[https://www.cogrob.org/ Cognitive Robotics] Lab under the supervision of [http://www.hichristensen.net/ Prof. Henrik I. Christensen]. Prior to this, I 
+obtained an M.S. degree in [http://www.ece.ucsd.edu/ Electrical and Computer Engineering] from UC San Diego, and a B.E. degree in 
+[https://www.iiests.ac.in/IIEST/AcaUnitDetails/EE Electrical Engineering] from [https://www.iiests.ac.in/ Indian Institute of Engineering Science and 
+Technology (IIEST) Shibpur].
+== News 
+- *Mar 2021* ~~~ I will be joining Google as a Research Intern in Summer 2021.
+- *Oct 2020* ~~~ Our paper on [https://sites.google.com/eng.ucsd.edu/mjolnir/ object-goal navigation] is accepted at [https://www.robot-learning.org/ CoRL 2020]! (acceptance rate - 34.02%)
+- *Feb 2020* ~~~ Our paper on [https://sites.google.com/eng.ucsd.edu/sage-net/ semantically-augmented gaze detection network] is accepted at [http://cvpr2020.thecvf.com/ CVPR 2020]! (acceptance rate - 22.08%)
+- *Nov 2019* ~~~ Presented paper at [https://www.iros2019.org/ IROS 2019] in Macau, China!
+- *Sep 2019* ~~~ I started my Ph.D. journey in CSE Department, UC San Diego
+- *Jun 2019* ~~~ Our paper on [https://sites.google.com/eng.ucsd.edu/deduce/ place categorization] is accepted at [https://www.iros2019.org/ IROS 2019]!
+- *Jun 2019* ~~~ I succesfully defended my MS thesis!
+== Education 
+- Ph.D., Department of Computer Science and Engineering, UC San Diego, La Jolla, CA, USA, Sep. 2019 - Present
+- M.S., Department of Electrical and Computer Engineering, UC San Diego, La Jolla, CA, USA, Sep. 2017 - Jun. 2019
+- B.E., Department of Electrical Engineering, Indian Institute of Engineering Science and Technology, Shibpur, India, Jul. 2013 - May 2017
+== Experience 
+- Sep 2018 - Present ~~~ Graduate Research Assistant, Cognitive Robotics Lab, UCSD
+- Jun 2018 - Aug 2018 ~~~ Summer Research Fellow, Statistical Visual Computing Lab, UCSD
+- Mar 2018 - Jun 2018 ~~~ Graduate Teaching Assistant, PHYS 120, UCSD
+- Sep 2017 - Dec 2017 ~~~ Graduate Teaching Assistant, ECE 276A, UCSD
+- May 2016 - Jul 2016 ~~~ Summer Research Intern, Paris VIII University, Paris
+- May 2015 - Jun 2015 ~~~ Summer Research Intern, BITS Pilani-Goa, Goa
+== Research Interests 
+- Deep Learning
+- Robotics
+- Computer Vision

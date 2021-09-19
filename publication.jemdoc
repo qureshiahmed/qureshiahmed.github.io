@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{publication.html} ,nofooter
+==Anwesan Pal 
+(\* denotes equal contribution)
+
+== Conference Proceedings
+. *Learning hierarchical relationships for object-goal navigation* \n
+*A. Pal*\*, Y. Qiu\*, and H. I. Christensen \n
+Conference on Robot Learning (CoRL), Cambridge, MIT, USA, 2020.
+\[[https://arxiv.org/pdf/2003.06749.pdf arXiv]\] \[[https://sites.google.com/eng.ucsd.edu/mjolnir project]\]
+. *“Looking at the right stuff” - Guided semantic-gaze for autonomous driving* \n
+*A. Pal*, S. Mondal, and H. I. Christensen \n
+Conference on Computer Vision and Pattern Recognition (CVPR), Seattle, USA, 2020.
+\[[https://openaccess.thecvf.com/content_CVPR_2020/papers/Pal_Looking_at_the_Right_Stuff_-_Guided_Semantic-Gaze_for_Autonomous_CVPR_2020_paper.pdf paper]\] \[[https://arxiv.org/pdf/1911.10455.pdf arXiv]\] \[[https://sites.google.com/eng.ucsd.edu/sage-net/ project]\]
+. *DEDUCE: Diverse scEne Detection methods in Unseen Challenging Environments* \n
+*A. Pal*, C. Nieto-Granda, and H. I. Christensen \n
+International Conference on Intelligent Robots and Systems (IROS), Macau, China, Nov. 2019.
+\[[https://ieeexplore.ieee.org/document/8968108 paper]\] \[[https://arxiv.org/pdf/1908.00191.pdf arXiv]\] \[[https://sites.google.com/eng.ucsd.edu/deduce/ project]\]
+== Ongoing
+. *Knowledge-based trajectory prediction with attentive intent* \n
+H. Xiang, *A. Pal*, Y. Qiu, Q. Li, and H. I. Christensen \n
