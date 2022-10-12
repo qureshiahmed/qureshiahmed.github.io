@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Purdue CS 59300 Robot Learning (Spring 2023)</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">CS593ROB</div>
+<div class="menu-item"><a href="index.html" class="current">Instructor's Home</a></div>
+<div class="menu-item"><a href="https://piazza.com/purdue/spring2022/cs59300rob">Piazza</a></div>
+<div class="menu-item"><a href="sp22.html#des">Description</a></div>
+<div class="menu-item"><a href="sp22.html#course">Course Content</a></div>
+<div class="menu-item"><a href="sp22.html#gp">Grading Policy</a></div>
+<div class="menu-item"><a href="sp22.html#ai">Academic Integrity</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1 id="des">Purdue CS 59300 Robot Learning (Spring 2023)</h1>
+</div>
+<p>This course covers topics in motion planning, estimation, and control to design algorithms for robots to safely interact with their environments and perform various challenging tasks under constraints. The first part of this course focuses on classical techniques such as search-based and sampling-based planning, PID control, Model Predictive Controller (MPC), and Bayesian filters. The second part covers modern deep learning and deep reinforcement learning techniques and their application to planning and decision-making in robotics. </p>
+<h2>Administrative Information</h2>
+<ul>
+<li><p>Instructor: Ahmed H. Qureshi (ahqureshi@purdue.edu) | Office Hours & Location: Monday 3:00 - 4:00 pm at HAAS 152</p>
+</li>
+<!--<li><p>TA: Troy William Honegger (thonegge@purdue.edu) | Office Hours: Tuesday 12:00 - 1:00pm or by appointment</p>
+</li>-->
+<li><p>Time &amp; Location: TTH 9:00-10:15, LWSN 1106</p>
+</li>
+</ul>
+<h2>Course Content </h2>
+<table id="course">
+<tr class="r1"><td class="c1"><b>Sr</b> </td><td class="c2"> <b>Date</b> </td><td class="c3"> <b>Topics (Tentative)</b> </td><td class="c4"> <b>Readings</b> </td></tr>
+<tr class="r2"><td class="c1">1 </td><td class="c2"> 1/11 </td><td class="c3"> Introduction to Robotics </td><td class="c4"> </td></tr>
+<tr class="r3"><td class="c1">2 </td><td class="c2">1/13 </td><td class="c3"> Robot Manipulators (Forward/Inverse Kinematics)</td><td class="c4"> </td></tr>
+<tr class="r4"><td class="c1">3 </td><td class="c2">1/18 </td><td class="c3"> Motion Planning I: Sampling-based methods I (RRT, PRM)</td><td class="c4"> <a href="http://msl.cs.uiuc.edu/~lavalle/papers/LavKuf01.pdf">[1]</a> <a href="https://www.cs.cmu.edu/~motionplanning/papers/sbp_papers/PRM/prmbasic_01.pdf">[2]</a></td></tr>
+<tr class="r5"><td class="c1">4 </td><td class="c2">1/20 </td><td class="c3"> Motion Planning II: Sampling-based methods II (RRTConnect, RRT*, B-RRT*)</td><td class="c4"> <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15494-s12/readings/kuffner_icra2000.pdf">[1]</a> <a href="https://arxiv.org/pdf/1105.1186.pdf">[2]</a> </td></tr>
+<tr class="r6"><td class="c1"></td><td class="c2">1/21 </td><td class="c3"> <b>Assignment 1 (Release)</b></td><td class="c4"> </td></tr>
+<tr class="r7"><td class="c1">5 </td><td class="c2">1/25 </td><td class="c3"> Motion Planning III: Advance Constraints (Kinodynamic, Manifolds, etc.) </td><td class="c4"> <a href="https://personalrobotics.cs.washington.edu/publications/berenson2011task.pdf">[1]</a> <a href="http://kavrakilab.org/publications/kingston2018sampling-based-methods-for-motion-planning.pdf">[2]</a> </td></tr>
+<tr class="r8"><td class="c1">6 </td><td class="c2">1/27 </td><td class="c3"> Optimal Control I: PID I</td><td class="c4"> <a href="https://link.springer.com/referencework/10.1007/978-3-540-30301-5">Ch6</a></td></tr>
+<tr class="r9"><td class="c1">7 </td><td class="c2">2/1 </td><td class="c3"> Optimal Control II: PID II</td><td class="c4"><a href="https://link.springer.com/referencework/10.1007/978-3-540-30301-5">Ch6</a></td></tr>
+<tr class="r10"><td class="c1">8 </td><td class="c2">2/3  </td><td class="c3"> Project Discussions</td><td class="c4"> </td></tr>
+<tr class="r11"><td class="c1"></td><td class="c2">2/4 </td><td class="c3"> <b>Assignment 1 (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r12"><td class="c1"></td><td class="c2">2/7 </td><td class="c3"> <b>Assignment 2 (Release)</b></td><td class="c4"> </td></tr>
+<tr class="r13"><td class="c1">9 </td><td class="c2">2/8  </td><td class="c3"> Optimal Control III: MPC I</td><td class="c4"> </td></tr>
+<tr class="r14"><td class="c1">10 </td><td class="c2">2/10 </td><td class="c3"> Optimal Control IV: MPC II</td><td class="c4"> <a href="https://arxiv.org/pdf/2004.08763.pdf">[1]</a> <a href="https://github.com/homangab/gradcem">[2]</a> </td></tr>
+<tr class="r15"><td class="c1">11 </td><td class="c2">2/15 </td><td class="c3"> Estimation I: Probability Review, Bayes Filtering</td><td class="c4"> </td></tr>
+<tr class="r16"><td class="c1">12 </td><td class="c2">2/17 </td><td class="c3"> Estimation II: Kalman Filter + Combining Planning, Estimation & Control</td><td class="c4"> <a href="https://www.kalmanfilter.net/default.aspx">[1]</a> <a href="https://www.norbert-freier.de/dateien/kalman_filter_multiplying_normal_distributions_norbert_freier_2013.pdf">[2]</a>  </td></tr>
+<tr class="r17"><td class="c1"></td><td class="c2">2/18 </td><td class="c3"> <b> Project title and team members (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r18"><td class="c1">13 </td><td class="c2">2/22 </td><td class="c3"> Function Approximation I: Neural Networks, Backpropagation, Dropout</td><td class="c4"> <a href="https://arxiv.org/abs/1907.06013">[1]</a> </td></tr>
+<tr class="r19"><td class="c1"></td><td class="c2">2/22 </td><td class="c3"> <b>Assignment 2 (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r20"><td class="c1">14 </td><td class="c2">2/24 </td><td class="c3">Function Approximation II: Convolutional Neural Networks, Recurrent Neural Networks (LSTMs)</td><td class="c4"> </td></tr>
+<tr class="r21"><td class="c1"></td><td class="c2">2/25 </td><td class="c3"> <b>Assignment 3 (Release)</b></td><td class="c4"> </td></tr>
+<tr class="r22"><td class="c1"></td><td class="c2">2/28 </td><td class="c3"> <b> Project Milestone 1 (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r23"><td class="c1">15 </td><td class="c2">3/1  </td><td class="c3">Function Approximation III: Variational Autoencoders (VAEs), Generative Adversarial Networks
+</td><td class="c4"><a href="https://arxiv.org/pdf/1312.6114.pdf">[1]</a> <a href="https://arxiv.org/abs/1709.05448">[2]</a> <a href="https://arxiv.org/abs/1406.2661">[3]</a></td></tr>
+<tr class="r24"><td class="c1">16 </td><td class="c2">3/3 </td><td class="c3">Learning for Planning :Informed Sampling, Path Generation</td><td class="c4"> </td></tr>
+<tr class="r25"><td class="c1">17 </td><td class="c2">3/8  </td><td class="c3"> Deep Reinforcement Learning I: MDPs, Value Function, Q-Function </td><td class="c4"> <a href="https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf">[1]</a> </td></tr>
+<tr class="r26"><td class="c1">18 </td><td class="c2">3/10 </td><td class="c3"> Deep Reinforcement Learning II: Policy Gradients (Reinforce) </td><td class="c4"> <a href="https://proceedings.neurips.cc/paper/1999/file/464d828b85b0bed98e80ade0a5c43b0f-Paper.pdf">[1]</a> </td></tr>
+<tr class="r27"><td class="c1"></td><td class="c2">3/11 </td><td class="c3"> <b>Assignment 3 (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r28"><td class="c1">19 </td><td class="c2">3/15 </td><td class="c3">Spring Break</td><td class="c4"> </td></tr>
+<tr class="r29"><td class="c1">20 </td><td class="c2">3/17 </td><td class="c3"> Spring Break</td><td class="c4"> </td></tr>
+<tr class="r30"><td class="c1"></td><td class="c2">3/18 </td><td class="c3"> <b>Assignment 4 (Release)</b></td><td class="c4"> </td></tr>
+<tr class="r31"><td class="c1"></td><td class="c2">3/18 </td><td class="c3"> <b>Project Milestone 2 (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r32"><td class="c1">21 </td><td class="c2">3/22 </td><td class="c3"> Deep Reinforcement Learning III: Advance Policy Gradients Methods I</td><td class="c4"> <a href="https://arxiv.org/pdf/1602.01783.pdf">[1]</a> <a href="https://arxiv.org/pdf/1506.02438.pdf">[2]</a> <a href="https://arxiv.org/pdf/1509.02971.pdf">[3]</a> </td></tr>
+<tr class="r33"><td class="c1">22 </td><td class="c2">3/24 </td><td class="c3"> Deep Reinforcement Learning IV: Advance Policy Gradients Methods II</td><td class="c4"> <a href="https://arxiv.org/abs/1502.05477">[1]</a> <a href="https://arxiv.org/abs/1707.06347">[2]</a> <a href="https://arxiv.org/pdf/1802.09477.pdf">[3]</a> </td></tr>
+<tr class="r34"><td class="c1">23 </td><td class="c2">3/29 </td><td class="c3"> Imitation Learning </td><td class="c4"><a href="https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats10-paper.pdf">[1]</a> <a href="https://arxiv.org/pdf/1011.0686.pdf">[2]</a> <a href="https://proceedings.neurips.cc/paper/2016/file/cc7e2b878868cbae992d1fb743995d8f-Paper.pdf">[3] </td></tr>
+<tr class="r35"><td class="c1">24 </td><td class="c2">3/31 </td><td class="c3"> Inverse Reinforcement Learning I: Maximum Entropy(MaxEnt)-IRL </td><td class="c4"> </td></tr>
+<tr class="r36"><td class="c1"></td><td class="c2">4/1 </td><td class="c3"> <b>Assignment 4 (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r37"><td class="c1">25 </td><td class="c2">4/5  </td><td class="c3"> Inverse Reinforcement Learning II: GANs &amp; IRL</td><td class="c4"> </td></tr>
+<tr class="r38"><td class="c1">26 </td><td class="c2">4/7  </td><td class="c3"> Deep Reinforcement Learning for Planning</td><td class="c4"> </td></tr>
+<tr class="r39"><td class="c1">27 </td><td class="c2">4/12 </td><td class="c3"> Closing Remarks, Discussions &amp; Open Research Problems</td><td class="c4"> </td></tr>
+<tr class="r40"><td class="c1"></td><td class="c2">4/13 </td><td class="c3"> <b> Project Milestone 3: project presentation files (Due 11:59pm (EDT))</b></td><td class="c4"> </td></tr>
+<tr class="r41"><td class="c1">28 </td><td class="c2">4/14 </td><td class="c3"> Project Presentations I</td><td class="c4"> </td></tr>
+<tr class="r42"><td class="c1">29 </td><td class="c2">4/19 </td><td class="c3"> Project Presentations II</td><td class="c4"> </td></tr>
+<tr class="r43"><td class="c1">30 </td><td class="c2">4/21 </td><td class="c3"> Project Presentations III</td><td class="c4"> </td></tr>
+<tr class="r44"><td class="c1">31 </td><td class="c2">4/26 </td><td class="c3"> Project Presentations IV</td><td class="c4"> </td></tr>
+<tr class="r45"><td class="c1">32 </td><td class="c2">4/28 </td><td class="c3"> Project Presentations V</td><td class="c4"> </td></tr>
+<tr class="r46"><td class="c1"></td><td class="c2">5/3 </td><td class="c3"> <b>Project Milestone 4: Project Report, Demonstration Videos, Codes, Trained Models &amp; Datasets(Due 11:59pm (EDT))</b></td><td class="c2"> </td></tr>
+<tr class="r47"><td class="c1">
+</td></tr></table>
+<h2 id="prereq">Prerequisites</h2>
+<p>Familiarity with Data Structures &amp; Algorithms, and a background in AI &amp; Statistical Estimation is required. The interested undergraduate students should meet the following prerequisites:</p>
+<ul>
+<li><p>CS 25100 Data Structures &amp; Algorithms</p>
+</li>
+<li><p>CS47100-AI 2021 Artificial Intelligence OR CS37300 Data Mining &amp; Machine Learning</p>
+</li>
+</ul>
+<h2 id="tbook">Textbooks</h2>
+<p>There are no specific textbooks. However, some helpful reference books include: </p>
+<ul>
+<li><p>Principles of Robot Motion (Theory, Algorithms, and Implementations) by Howie Choset, Kevin M. Lynch, Seth Hutchinson, George A. Kantor, Wolfram Burgard, Lydia E. Kavraki and Sebastian Thrun. </p>
+</li>
+<li><p>Planning Algorithms by Steven M LaValle. Cambridge university press, 2006. </p>
+</li>
+<li><p>Probabilistic Robotics by Wolfram Burgard, Dieter Fox, and Sebastian Thrun. MIT Press (2005).</p>
+</li>
+<li><p>Reinforcement learning: An introduction by Richard S. Sutton, and Andrew G. Barto. MIT press, 2018.</p>
+</li>
+<li><p>Deep Learning by Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. MIT press, 2016.</p>
+</li>
+</ul>
+<!--<h2 id="gp">Grading Policy</h2>
+<p>There are no midterm and final exams. </p>
+<table id="Grading">
+<tr class="r1"><td class="c1">Assignments (4 X 10%) </td><td class="c2"> 40% </td></tr>
+<tr class="r2"><td class="c1">Project </td><td class="c2"> 55% </td></tr>
+<tr class="r5"><td class="c1">Class Participation </td><td class="c2"> 5% </td></tr>
+<tr class="r6"><td class="c1">
+</td></tr></table>
+<table id="Grading2">
+<tr class="r1"><td class="c1">Project total </td><td class="c2"> 55% </td></tr>
+<tr class="r2"><td class="c1">Milestone 1: Environment Setup </td><td class="c2"> 10% </td></tr>
+<tr class="r3"><td class="c1">Milestone 2: Planning/Control component + Project proposal</td><td class="c2"> 15% </td></tr>
+<tr class="r4"><td class="c1">Milestone 3: Learning component + Initial results + Project presentation</td><td class="c2"> 15% </td></tr>
+<tr class="r5"><td class="c1">Milestone 4: Full Project Report + Demo videos + Code with documentation</td><td class="c2"> 15% </td></tr>
+<tr class="r6"><td class="c1">
+</td></tr></table>  
+<p>Project: Students are encouraged to work as teams of two or three.</p>
+<p>Project proposal and final report template:<a href="https://www.overleaf.com/latex/templates/ieee-journal-paper-template/jbbbdkztwxrd">https://www.overleaf.com/latex/templates/ieee-journal-paper-template/jbbbdkztwxrd</a></p>
+<p>Late Submission Policy: All deadlines are firm unless notified in advance. Late submissions can only be accepted within next 48hr (1second==48hr) of the deadline but will result in a straight 25% off.</p>-->
+<h2 id="ai">Academic Integrity</h2>
+<p>This course defaults to Purdue standards on intellectual integrity and academic conduct. Therefore, students are responsible for reading the following pages and comply with them throughout this course.</p>
+<ul>
+<li><p><a href="https://spaf.cerias.purdue.edu/integrity.html">https://spaf.cerias.purdue.edu/integrity.html</a></p>
+</li>
+<li><p><a href="https://spaf.cerias.purdue.edu/cpolicy.html">https://spaf.cerias.purdue.edu/cpolicy.html</a></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-10-21 21:57:01 US Eastern Daylight Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
