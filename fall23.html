@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Purdue CS 49000 Introduction to Robotics (Fall 2023)</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">CS49000ROB</div>
+<div class="menu-item"><a href="index.html" class="current">Instructor's Home</a></div>
+<div class="menu-item"><a href="#">Piazza</a></div>
+<div class="menu-item"><a href="fall23.html#des">Description</a></div>
+<div class="menu-item"><a href="fall23.html#course">Course Content</a></div>
+<div class="menu-item"><a href="fall23.html#gp">Grading Policy</a></div>
+<div class="menu-item"><a href="fall23.html#ai">Academic Integrity</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1 id="des">Purdue CS49000 Introduction to Robotics (Fall 2023)</h1>
+</div>
+<p>Any intelligent robot system interacting with our environment needs to have perception, planning, and control methods in its cognition process. The perception module outlines the robot's procedures to gather and interpret sensory observations into world models. The underlying planning and control modules use those world models to plan robot behaviors and their interaction with our natural environments. Therefore, this course will cover the fundamental topics in robot perception, planning, and control to design general-purpose robot cognition algorithms. Overall, this course is divided into four modules:
+  </p>
+  <ul>
+    <li><p><b>Robot perception:</b> This covers fundamental techniques needed for robot localization and mapping from raw 3D sensory information.</p>
+    </li>
+    <li><p><b>Robot planning:</b> Given the generated maps, this module will discuss robot behavior planning techniques such as A*, RRT*, and trajectory optimization.</p>
+    </li>
+    <li><p><b>Robot Control:</b> This introduces basic control techniques such as PID controller to execute the robot's planned behaviors in the real world.</p>
+    </li>
+    <li><p><b>Robot Learning:</b>  This part will briefly introduce machine learning techniques for robot decision-making and control.</p>
+    </li>
+  </ul>
+<p>Full syllabus is available <a href="https://drive.google.com/file/d/1IvTGF4o37fy1sUJO3OihQ4oEkqQHG1fT/view?usp=sharing">here</a>.</p>    
+<h2>Administrative Information</h2>
+<ul>
+<li><p>Instructor: Ahmed H. Qureshi (ahqureshi@purdue.edu) | Office Hours & Location: TBD</p>
+</li>
+<li><p>TA: TBD | Office Hours: TBD</p>
+</li>
+<li><p>Time &amp; Location: TTH:10:30 - 11:45 am, GRIS 133</p>
+</li>
+</ul>
+<h2>Course Content </h2>
+<table id="course">
+<tr class="r1"><td class="c1"><b>Sr</b> </td><td class="c2"> <b>Date</b> </td><td class="c3"> <b>Topics (Tentative)</b> </td><td class="c4"> <b>Readings</b> </td></tr>
+<tr class="r2"><td class="c1">1 </td><td class="c2"> 8/22 </td><td class="c3"> Course Introduction</td><td class="c4"> </td></tr>
+<tr class="r3"><td class="c1">2 </td><td class="c2">8/24 </td><td class="c3"> Probability, Bayesian Reasoning & Gaussian Distribution</td><td class="c4"> </td></tr>
+<tr class="r4"><td class="c1">3 </td><td class="c2">8/29 </td><td class="c3">  Homogeneous Coordinates</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1">4 </td><td class="c2">8/31 </td><td class="c3"> Gaussian Discriminant Analysis</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">9/1 </td><td class="c3" style="color:red;"> Assignment 1 (Release 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r6"><td class="c1">5</td><td class="c2">9/5 </td><td class="c3"> Robot Motion Model</td><td class="c4"> </td></tr>
+<tr class="r7"><td class="c1">6 </td><td class="c2">9/7 </td><td class="c3"> Robot Sensor Model <font style="color:red;"> ~Q1 </font></td><td class="c4"> </td></tr>
+<tr class="r8"><td class="c1">7 </td><td class="c2">9/12 </td><td class="c3"> Feature-based Robot Localization</td><td class="c4"> </td></tr>
+<tr class="r9"><td class="c1">8 </td><td class="c2">9/14 </td><td class="c3"> Featureless Localization, Bayesian Filter  </td><td class="c4"></td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">9/15 </td><td class="c3" style="color:red;"> Assignment 1 (Due 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">9/16 </td><td class="c3" style="color:red;"> Assignment 2 (Release 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r10"><td class="c1">9 </td><td class="c2">9/19  </td><td class="c3">Kalman Filter</td><td class="c4"> </td></tr>
+<tr class="r11"><td class="c1">10</td><td class="c2">9/21 </td><td class="c3">Extended Kalman Filter (EKF) <font style="color:red;"> ~Q2 </font></td><td class="c4"> </td></tr>
+<tr class="r12"><td class="c1">11</td><td class="c2">9/26 </td><td class="c3">Simultaneous Localization and Mapping (SLAM)</td><td class="c4"> </td></tr>
+<tr class="r13"><td class="c1">12 </td><td class="c2">9/28  </td><td class="c3">Robot Motion Planning</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">9/29 </td><td class="c3" style="color:red;"> Assignment 2 (Due 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">9/30 </td><td class="c3" style="color:red;"> Assignment 3 (Release 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r14"><td class="c1">13 </td><td class="c2">10/3 </td><td class="c3">Robot Manipulator (Forward/Inverse Kinematics)</td><td class="c4">  </td></tr>
+<tr class="r15"><td class="c1">14 </td><td class="c2">10/6 </td><td class="c3">Combinatorial Planners</td><td class="c4"> </td></tr>
+<tr class="r16"><td class="c1"></td><td class="c2">10/10 </td><td class="c3"> October Break</td><td class="c4"> </td></tr>
+<tr class="r17"><td class="c1">15</td><td class="c2">10/12 </td><td class="c3"> Sampling-based Planners I: PRM, RRT</td><td class="c4"> </td></tr>
+<tr class="r18"><td class="c1">16 </td><td class="c2">10/17 </td><td class="c3">Sampling-based Planners II: RRTConnect, RRT*, Bidirectional-RRT*</td><td class="c4">  </td></tr>
+<tr class="r19"><td class="c1">17</td><td class="c2">10/19 </td><td class="c3"> Properties of Sampling-based Planners <font style="color:red;"> ~Q3 </font></td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">10/20 </td><td class="c3" style="color:red;"> Assignment 3 (Due 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r20"><td class="c1">18 </td><td class="c2">10/24 </td><td class="c3">Robot Control</td><td class="c4"> </td></tr>
+<tr class="r21"><td class="c1">19</td><td class="c2">10/26 </td><td class="c3">PID Control I</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">10/27 </td><td class="c3" style="color:red;"> Assignment 4 (Release 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r22"><td class="c1">20</td><td class="c2">10/31 </td><td class="c3">PID Control II</td><td class="c4"> </td></tr>
+<tr class="r23"><td class="c1">21 </td><td class="c2">11/2  </td><td class="c3">Combining Planning + Control + Localization</td><td class="c4"></td></tr>
+<tr class="r24"><td class="c1">22 </td><td class="c2">11/7 </td><td class="c3">Markov Decision Process</td><td class="c4"> </td></tr>
+<tr class="r25"><td class="c1">23 </td><td class="c2">11/9  </td><td class="c3"> Dynamic Programming</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">11/10 </td><td class="c3" style="color:red;"> Assignment 4 (Due 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">11/11 </td><td class="c3" style="color:red;"> Assignment 5 (Release 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r26"><td class="c1">24 </td><td class="c2">11/14 </td><td class="c3">MCMC, TD-learning</td><td class="c4"> </td></tr>
+<tr class="r27"><td class="c1">25</td><td class="c2">11/16 </td><td class="c3">Neural Networks I</td><td class="c4"> </td></tr>
+<tr class="r28"><td class="c1">26 </td><td class="c2">11/21 </td><td class="c3">Neural Networks II</td><td class="c4"> </td></tr>
+<tr class="r29"><td class="c1"> </td><td class="c2">11/23 </td><td class="c3"> Thanksgiving Vacation</td><td class="c4"> </td></tr>
+<tr class="r30"><td class="c1">27</td><td class="c2">11/28 </td><td class="c3"> Deep Q Learning for Robot Control <font style="color:red;"> ~Q4 </font></td><td class="c4"> </td></tr>
+<tr class="r5"><td class="c1"> </td><td class="c2">11/29 </td><td class="c3" style="color:red;"> Assignment 5 (Due 11:59 pm)</td><td class="c4"> </td></tr>
+<tr class="r31"><td class="c1">28</td><td class="c2">11/30 </td><td class="c3"> Modern Day Robotics and Robot Ethics</td><td class="c4"> </td></tr>
+<tr class="r32"><td class="c1">29 </td><td class="c2">12/5 </td><td class="c3"> Final Exam  </td><td class="c4"> </td></tr>
+<tr class="r33"><td class="c1">30 </td><td class="c2">12/7 </td><td class="c3"> Closing Remarks</td><td class="c4"> </td></tr>
+<tr class="r47"><td class="c1">
+</td></tr></table>
+<h2 id="prereq">Prerequisites</h2>
+<p>Undergraduate level CS 25100 Minimum Grade of C or Equivalent.</p>
+<h2 id="tbook">Textbooks</h2>
+<p>Siciliano, B., Khatib, O., & Kröger, T. (Eds.). (2008). Springer handbook of robotics (Vol. 200). Berlin: springer. Additional material will be selected from other sources which may include: </p>
+<ul>
+<li><p>Principles of Robot Motion (Theory, Algorithms, and Implementations) by Howie Choset, Kevin M. Lynch, Seth Hutchinson, George A. Kantor, Wolfram Burgard, Lydia E. Kavraki and Sebastian Thrun. </p>
+</li>
+<li><p>Planning Algorithms by Steven M LaValle. Cambridge university press, 2006. </p>
+</li>
+<li><p>Probabilistic Robotics by Wolfram Burgard, Dieter Fox, and Sebastian Thrun. MIT Press (2005).</p>
+</li>
+<li><p>Reinforcement learning: An introduction by Richard S. Sutton, and Andrew G. Barto. MIT press, 2018.</p>
+</li>
+<li><p>Deep Learning by Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. MIT press, 2016.</p>
+</li>
+</ul>
+<p>Additional reading material including lecture notes will be available to students via Brightspace.</p>
+<h2 id="gp">Grading Policy</h2>
+<table id="Grading">
+<tr class="r1"><td class="c1"><b>Items</b></td><td class="c2"><b> Weightage (%) </b></td></tr>
+<tr class="r1"><td class="c1">Assignments (5 X 10%) </td><td class="c2"> 50% </td></tr>
+<tr class="r2"><td class="c1">Quizzes (4 X 5%) </td><td class="c2"> 20% </td></tr>
+<tr class="r2"><td class="c1">Final Exam </td><td class="c2"> 25% </td></tr>
+<tr class="r5"><td class="c1">Class Participation </td><td class="c2"> 5% </td></tr>
+<tr class="r6"><td class="c1">
+</td></tr></table>
+<ul>
+  <li><p><b>Participation (5%; ongoing).</b> Participation points can be earned by actively engaging in discussions during class and on piazza. Please read the feedback that I provide for ways to enhance this grade going forward, and consult with me if you find yourself struggling to participate so we can develop appropriate strategies together.</p></li>
+  <li><p><b>Assignments (50%).</b> The assignments will be around the topics taught in the course to provide hands-on experience of programming robot algorithms.</p></li>
+  <li><p><b>Quizzes (20%).</b> There will be four quizzes that will be held in person during the class. There would be no retake of the examination unless a student had a proof of an unavoidable emergency. </p></li>
+  <li><p><b>Final Exam (25%).</b> There will be a final exam that will be held in person during the class. There would be no retake of the examination unless a student had a proof of an unavoidable emergency.</p></li>
+  
+</ul>
+ <p>Late Submission Policy: All deadlines are firm unless notified in advance. Late submissions can only be accepted within next 48hr (1second==48hr) of the deadline but will result in a straight 25% off.</p>
+<h2 id="ai">Academic Integrity</h2>
+<p>This course defaults to Purdue standards on intellectual integrity and academic conduct. Therefore, students are responsible for reading the following pages and comply with them throughout this course.</p>
+<ul>
+<li><p><a href="https://spaf.cerias.purdue.edu/integrity.html">https://spaf.cerias.purdue.edu/integrity.html</a></p>
+</li>
+<li><p><a href="https://spaf.cerias.purdue.edu/cpolicy.html">https://spaf.cerias.purdue.edu/cpolicy.html</a></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-10-21 21:57:01 US Eastern Daylight Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
