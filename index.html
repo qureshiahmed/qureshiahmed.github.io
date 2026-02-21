@@ -16,6 +16,25 @@
 <link rel="stylesheet" type="text/css" href="./assets/vendors/slick/slick-theme.css">
 <link rel='stylesheet' href='./assets/css/jquery.mCustomScrollbar.min.css'>
 <link rel="stylesheet" href="./assets/css/supporting.css">
+<style>
+  /* ── Mobile-responsive navbar ── */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background: #fff;
+      padding: 0.5rem 1rem 1rem;
+      border-top: 1px solid #e9ecef;
+    }
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0 !important;
+    }
+  }
+  /* ── Responsive YouTube embed spacing ── */
+  #invited-talk .ratio {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+</style>
 
 
 <title>Ahmed H. Qureshi </title>
@@ -90,6 +109,10 @@ MathJax.Hub.Config({
 
             <li class="nav-item">
               <a class="nav-link px-3" href="#research">Research</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#invited-talk">Invited Talk</a>
             </li>
 
             <li class="nav-item">
@@ -213,7 +236,7 @@ Previously, I received my Ph.D. in Intelligent Systems, Robotics, and Control fr
                 Email: ahqureshi [AT] purdue [DOT] edu<br/>
                 Office: HAAS 152 <br/>
                 Office Tel: (765)-496-3071 <br/></p>-->
-                <a href="mailto:ahqureshi@purdue.edu" title="email">
+                <a href="/cdn-cgi/l/email-protection#8eefe6fffbfcebfde6e7cefefbfceafbeba0ebeafb" title="email">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="40"><defs><style>.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}</style></defs><title>email</title><g id="Layer_2" data-name="Layer 2"><g id="email"><g id="email-2" data-name="email"><rect class="cls-1" width="24" height="24"/><path class="cls-2" d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.67,2L12,10.75,5.67,6ZM19,18H5a1,1,0,0,1-1-1V7.25l7.4,5.55a1,1,0,0,0,.6.2,1,1,0,0,0,.6-.2L20,7.25V17A1,1,0,0,1,19,18Z"/></g></g></g></svg>              </a>
 
                   <a href="https://scholar.google.com/citations?user=Lkrx2SkAAAAJ&hl=en" title="google scholar">
@@ -256,6 +279,25 @@ Previously, I received my Ph.D. in Intelligent Systems, Robotics, and Control fr
 </section>
 
 
+
+<section id="invited-talk" class="vision-top pb-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12">
+        <h2 class="h4 pb-1">Invited Talk</h2>
+        <p>Watch my invited talk on our research in robot autonomy and learning.</p>
+        <div class="ratio ratio-16x9" style="max-width: 800px; margin: 0 auto;">
+          <iframe
+            src="https://www.youtube.com/embed/RKFRO_G4YkA?si=kV-3rNLxN6BJl0C6"
+            title="Invited Talk – Ahmed H. Qureshi"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="research" class="research-areas pb-0">
   <div class="container mb-0">
@@ -396,7 +438,7 @@ Previously, I received my Ph.D. in Intelligent Systems, Robotics, and Control fr
                 
                 <p>
                 My team at CoRAL Lab performs fundamental research in the area of Collaborative Planning and Control, where human biomechanical and cognitive behavior models are taken explicitly into account for robots' decision-making and control. Our work aligns closely with the industry for solving a wide range of collaborative, multi-agent, robotics and autonomous driving problems in the natural dynamic world. Our work aligns closely with the industry for solving a wide range of collaborative, multi-agent, robotics and autonomous driving problems in the natural dynamic world.
-                <br/> <br/ >If you have an idea or are interested in collaboration, please <a href="mailto:ahqureshi@purdue.edu" target=&ldquo;blank&rdquo;>contact us</a>.
+                <br/> <br/ >If you have an idea or are interested in collaboration, please <a href="/cdn-cgi/l/email-protection#5a3b322b2f283f2932331a2a2f283e2f3f743f3e2f" target=&ldquo;blank&rdquo;>contact us</a>.
                 </p>
               </div>
 
@@ -460,7 +502,7 @@ Previously, I received my Ph.D. in Intelligent Systems, Robotics, and Control fr
               <div class="d-flex align-items-start my-3">
                 <ul class="list-unstyled p-0 m-0 w-100">
                   <li>Phone: <a href="tel:7654963071" class="text-white">(765) 496 3071</a></li>
-                  <li>Email: <a href="mail:ahqureshi@purdue.edu" class="text-white">ahqureshi@purdue.edu</a></li>
+                  <li>Email: <a href="mail:ahqureshi@purdue.edu" class="text-white"><span class="__cf_email__" data-cfemail="791811080c0b1c0a111039090c0b1d0c1c571c1d0c">[email&#160;protected]</span></a></li>
                   <li>Office: <a class="text-white">HAAS 151</a></li>
                 </ul>
               </div>
@@ -508,19 +550,11 @@ Previously, I received my Ph.D. in Intelligent Systems, Robotics, and Control fr
     </div>
   </footer>
 
+  <!-- Bootstrap JS for mobile navbar toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 	
 <!--<div id="footer">
 <div id="footer-text">
 Page generated 2021-09-19 16:21:00 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. <br /> 
-<a href="https://clustrmaps.com/site/1bk3f"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=dDW5wT1HY9tVoQNiPkiljyHbL1o53peL_r_1MDFAORs" /></a>	
-	
-</div>
-</div>
-</td>
-</tr>
-</table>-->
-</body>
-</html>
-
-
-
+<a href="https://clustrmaps.com/site/1bk3f"  title="Visit tracker"><img sr
